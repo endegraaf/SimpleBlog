@@ -42,8 +42,8 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/blog" />
-		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="username" value="bloguser" />
+		<property name="password" value="blogpassword" />
 	</bean>
 
 	<bean id="entityManagerFactory"
@@ -88,9 +88,9 @@
 	<!-- 
 	method security 
 	-->
-
+	<!--  Disabled to support Unit testing  -->
 	<sec:global-method-security
-		secured-annotations="enabled" jsr250-annotations="enabled" >		
+		secured-annotations="enabled" jsr250-annotations="disabled" >		
 	</sec:global-method-security>
 
 	<sec:authentication-manager alias="authenticationManager">
