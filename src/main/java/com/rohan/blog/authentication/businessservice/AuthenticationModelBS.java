@@ -6,6 +6,6 @@ public interface AuthenticationModelBS {
 	
 	boolean login(String username, String password);
 
-	@Secured({"ROLE_ADMIN","ROLE_REGISTERED"})
+	@Secured({"ROLE_ADMIN","ROLE_REGISTERED", "ROLE_USER"})
 	void logout();
 }
