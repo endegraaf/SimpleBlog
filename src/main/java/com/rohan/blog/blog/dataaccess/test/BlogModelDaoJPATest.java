@@ -15,8 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.rohan.blog.blog.dataaccess.BlogModelDao;
 import com.rohan.blog.entity.Blog;
 
-
-@ContextConfiguration(locations={"classpath:applicationContextTest.xml"})
+@ContextConfiguration("file:src/test/resources/applicationContextTest.xml")
 @TransactionConfiguration(transactionManager="transactionManager", defaultRollback=false)
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
