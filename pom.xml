@@ -75,8 +75,8 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
+			<version>4.11</version>
+			<scope>compile</scope>
 		</dependency>
 		<!-- Support for testing Spring applications with tools such as JUnit and 
 			TestNG This artifact is generally always defined with a 'test' scope for 
