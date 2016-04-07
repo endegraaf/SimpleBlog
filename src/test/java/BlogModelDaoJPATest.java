@@ -1,6 +1,4 @@
-package com.rohan.blog.blog.dataaccess.test;
-
-import static org.junit.Assert.fail;
+package com.rohan.blog;
 
 import java.util.Date;
 
@@ -32,27 +30,26 @@ public class BlogModelDaoJPATest {
 		blog.setCreatedDate(new Date());
 		
 		blogModelDao.save(blog);
-		
 	}
-
-	@Test
-	public void testFindByPrimaryKey() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testUpdate() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testDeleteByKey() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testDelete() {
-		fail("Not yet implemented");
-	}
+//
+//	@Test
+//	public void testFindByPrimaryKey() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testUpdate() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testDeleteByKey() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	public void testDelete() {
+//		fail("Not yet implemented");
+//	}
 
 }
