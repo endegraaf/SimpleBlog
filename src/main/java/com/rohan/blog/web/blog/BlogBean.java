@@ -32,8 +32,8 @@ public class BlogBean {
     @PostConstruct
     public void init() {
         System.out.println("PostConstruct");
-        DbHelper.getInstance().init();
-        System.out.println("get instance of db helper!");
+        //DbHelper.getInstance().init();
+        //System.out.println("get instance of db helper!");
     }
 
     @PreDestroy
@@ -41,8 +41,8 @@ public class BlogBean {
         this.blogLabel = null;
         this.blogContent = null;
         this.blogCreatedDate = null;
-        System.out.println("Close the instance of db helper!");
-        DbHelper.getInstance().close();
+        //System.out.println("Close the instance of db helper!");
+        //DbHelper.getInstance().close();
         System.out.println("PreDestroy");
     }
 
