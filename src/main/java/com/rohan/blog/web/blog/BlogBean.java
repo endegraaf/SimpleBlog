@@ -11,6 +11,7 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
+import com.rohan.blog.blog.dataaccess.DbHelper;
 import com.rohan.blog.delegate.BlogDelegate;
 import com.rohan.blog.entity.Blog;
 
@@ -31,7 +32,8 @@ public class BlogBean {
     @PostConstruct
     public void init() {
         System.out.println("PostConstruct");
-
+        DbHelper.getInstance().init();
+        System.out.println("get instance of db helper!");
     }
 
     @PreDestroy
@@ -39,6 +41,8 @@ public class BlogBean {
         this.blogLabel = null;
         this.blogContent = null;
         this.blogCreatedDate = null;
+        System.out.println("Close the instance of db helper!");
+        DbHelper.getInstance().close();
         System.out.println("PreDestroy");
     }
 

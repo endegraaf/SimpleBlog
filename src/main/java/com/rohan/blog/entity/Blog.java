@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
 import com.rohan.blog.framework.entity.BaseDO;
 
 
@@ -21,7 +20,7 @@ import com.rohan.blog.framework.entity.BaseDO;
 @Entity
 public class Blog extends BaseDO {
 	private static final long serialVersionUID = 1L;
-
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	//@SequenceGenerator(name="BlogSeq",sequenceName="BLOG_SEQ")
@@ -45,6 +44,8 @@ public class Blog extends BaseDO {
     public Blog() {
     }
 
+    
+    
 	public long getBlogId() {
 		return this.blogId;
 	}
