@@ -1,6 +1,7 @@
 package com.rohan.blog.web.login;
 
 import java.io.Serializable;
+import java.util.ResourceBundle;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -43,7 +44,19 @@ public class LoginBean implements Serializable {
         return "/index.xhtml?faces-redirect=true";
     }
 
-    public String getLogin() {
+    public String addMessage(){
+		addInfoMessage("broadcast.message");
+		return null;
+    }
+    
+    private void addInfoMessage(String str) {
+    	FacesContext context = FacesContext.getCurrentInstance();
+    	ResourceBundle bundle = context.getApplication().getResourceBundle(context, "msg");
+    	String message = bundle.getString(str);
+    	FacesContext.getCurrentInstance().addMessage(null,new FacesMessage(FacesMessage.SEVERITY_INFO, message, ""));
+	}
+
+	public String getLogin() {
         return login;
     }
 

@@ -15,6 +15,10 @@
 				<h:outputText value="#{msg['loginscreen.loginmessage']}" />
 				<br />
 				<br />
+
+				<p:growl id="growl" />
+				<p:commandButton action="#{loginBean.addMessage}"
+					value="Display Message" update="growl" />
 				<table>
 					<tr>
 						<td><h:outputText value="#{msg['loginscreen.loginfield']} " />
@@ -24,8 +28,7 @@
 					<tr>
 						<td><h:outputText value="#{msg['loginscreen.passfield']} " />
 						</td>
-						<td><p:password value="#{loginBean.password}" />
-						</td>
+						<td><p:password value="#{loginBean.password}" /></td>
 					</tr>
 					<tr>
 						<td colspan="2"><p:commandButton ajax="false"

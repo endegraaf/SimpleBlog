@@ -45,4 +45,5 @@ public class BlogTest {
 		assertEquals(blog.getBlogContent(),myUU);
 		
 	}
+		
 }
