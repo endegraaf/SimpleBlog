@@ -31,25 +31,5 @@ public class BlogModelDaoJPATest {
 		
 		blogModelDao.save(blog);
 	}
-//
-//	@Test
-//	public void testFindByPrimaryKey() {
-//		fail("Not yet implemented");
-//	}
-//
-//	@Test
-//	public void testUpdate() {
-//		fail("Not yet implemented");
-//	}
-//
-//	@Test
-//	public void testDeleteByKey() {
-//		fail("Not yet implemented");
-//	}
-//
-//	@Test
-//	public void testDelete() {
-//		fail("Not yet implemented");
-//	}
 
 }

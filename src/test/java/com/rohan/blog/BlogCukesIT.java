@@ -9,6 +9,6 @@ import org.junit.runner.RunWith;
         format = {"pretty", "html:target/cucumber"},
         features = "classpath:cucumber/blog.feature"
 )
-public class BlogCukesTest {
+public class BlogCukesIT {
 
 }
