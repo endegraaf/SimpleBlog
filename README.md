@@ -25,6 +25,9 @@ FLUSH PRIVILEGES;
 flyway  -baselineOnMigrate=false -url=jdbc:mysql://localhost/ -schemas=blog -user=bloguser -password=blogpassword -locations=filesystem:src/main/resources/db/migration/ migrate
 ```
 
+## Get the sources
+- `git clone https://github.com/endegraaf/SimpleBlog.git`
+- `cd SimpleBlog`
 
 ## Running the demo app
 - mvn clean install
