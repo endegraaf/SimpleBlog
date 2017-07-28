@@ -36,4 +36,7 @@ flyway  -baselineOnMigrate=false -url=jdbc:mysql://localhost/ -schemas=blog -use
 ## Use the demo
 - Visit your new demo app on [localhost](http://localhost:8088/blog/index.xhtml)
 
-
+## Automated testing Cucumber and Selenium
+- If demo app is running, you can start an automated test by executing `mvn clean install` from the commandline.
+- The Gherkin is stored in the `resources/cucumber` folder. In fact all of the `*.feature` files stored in there will be executed. 
+- A test execution report will be generated in the `target/cucumber` folder after the test has finished in the 
