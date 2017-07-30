@@ -44,9 +44,11 @@
 				</tr>
 			</table>
 			<p>
+				<p:growl id="growl" />
 				<p:commandButton value="Add Blog"
-					action="#{blogBean.addBlogDetails}"  ajax="false"/>
-				<p:commandButton action="/index.xhtml?faces-redirect=true" value="Cancel"></p:commandButton>	
+					action="#{blogBean.addBlogDetails}"  ajax="false" update="growl" />
+				<p:commandButton value="Cancel"
+				 	action="/index.xhtml?faces-redirect=true"/>
 			</p>
 			
 		</h:form>
