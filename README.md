@@ -4,12 +4,17 @@
 Spring Security and JPA(Hibernate). This repo is a fork from [rohan-s-raju](https://github.com/rohan-s-raju/SimpleBlog).
 - This demo can be used for training and demo purposes for code quality and automated testing and CI/CD.
 ## Initial setup instructions
-### Prerequisites
+## Prerequisites
 - JDK 1.8
 - Maven
 - [Flyway](https://flywaydb.org) for database migrations
 
-### Preparation
+
+## Get the sources
+- `git clone https://github.com/endegraaf/SimpleBlog.git`
+- `cd SimpleBlog`
+
+## Preparation
 - Create a local mysql database `blog`
 - Create a user `bloguser` with password `blogpassword` and grant permission on `blog`
 ```
@@ -24,10 +29,6 @@ FLUSH PRIVILEGES;
 ```
 flyway  -baselineOnMigrate=false -url=jdbc:mysql://localhost/ -schemas=blog -user=bloguser -password=blogpassword -locations=filesystem:src/main/resources/db/migration/ migrate
 ```
-
-## Get the sources
-- `git clone https://github.com/endegraaf/SimpleBlog.git`
-- `cd SimpleBlog`
 
 ## Running the demo app
 - mvn clean install
